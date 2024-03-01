@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply font-normal normal-case -tracking-[.03em];
+  }
+}
+
+.column-container {
+  @apply flex flex-col;
+}
+
+.container {
+  @apply h-[100%];
+}
+
+.row-container {
+  @apply flex flex-row;
+}
+
+#icon {
+  cursor: pointer;
+  border: 2px solid;
+  border-color: rgb(255, 71, 142);
+  background-color: rgba(255, 255, 255, 0.334);
+  border-radius: 50px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 5px;
+  line-height: 1em;
+  transition: all 0.2s ease-out;
+  padding: 8px;
+}
+
+#divider-line {
+  border-color: transparent;
+  border-bottom-color: rgba(204, 204, 204, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  color: #fff;
+}
+
+#description-content {
+  @apply max-w-[600px] text-center font-[1.1em];
+}
+
+#space {
+  @apply h-[30px];
+}
+
+#button {
+  @apply text-[1em] uppercase tracking-[0.1em] border-0 border-solid rounded-[50px] relative py-[10px] px-[15px] cursor-pointer inline-block box-border text-center outline-offset-0;
+}
+
+#block {
+  perspective: 800px;
+  position: relative;
+  align-items: center;
+}
+
+#row-center-container {
+  @apply flex flex-row text-center;
+}
+
+#post-item {
+  @apply relative overflow-hidden w-[100%] h-[100%] min-h-[200px] md:min-h-[300px] lg:min-h-[500px] h-0 inline-block mr-[10px] bg-[#222];
+}
+
+#post-item-thumb {
+  @apply hover:scale-105 transition cursor-pointer hover:opacity-80 w-[100%] h-[100%] bg-cover bg-center absolute ease-out duration-200;
+}
+
+#post-item-details {
+  @apply absolute bottom-0 pb-[10px] pl-[10px] text-left;
+}
+
+#post-item-title {
+  @apply font-bold leading-[1.1em] text-[1.5em];
+}
+
+#post-item-date {
+  @apply opacity-60;
+}
+
+#block {
+  perspective: 800px;
+}
+
+#description-content {
+  @apply max-w-[600px] text-center text-[1.1em] font-thin;
+}
+
+#row {
+  @apply flex flex-row items-center justify-between;
+}
+
+#image-content {
+  @apply h-auto border-none w-[360px];
+}
+
+#image-block {
+  @apply w-[41.67%] relative z-10 justify-center items-center flex;
+}
+
+#title-content {
+  @apply font-normal text-[2em] leading-[1em] normal-case tracking-tight;
+}
+
+#button-content {
+  @apply font-normal text-[14px] uppercase font-bold;
+}
+
+#button-block {
+  @apply p-[15px] text-center;
+}
+
+#button-icon {
+  @apply mr-[5px];
+}
+
+#title h2 {
+  @apply text-[1.2em] leading-[1em] uppercase tracking-[0];
+}
+
+#title p {
+  @apply font-light font-[1.2em] uppercase tracking-normal leading-[1em];
+}
+
+#content {
+  @apply p-[15px] relative text-left;
+}
+
+#item-image {
+  @apply space-y-2 w-[50px] h-[50px] bg-cover bg-center mr-[10px] float-left rounded-md relative;
+}
+
+#item-date {
+  @apply opacity-50;
+}
+
+#header {
+  @apply m-7 absolute z-[1202] w-[100%] max-w-[1860px];
+}
+
+#logo {
+  @apply p-0 whitespace-nowrap bg-[transparent] z-[1202] box-border relative;
+}
+
+#logo p {
+  @apply leading-[1em] font-normal text-[50px] text-white normal-case select-none tracking-normal;
+}
+
+#nav-item {
+  @apply text-[1.1em] font-normal text-white uppercase;
+}
+
+#nav-bar {
+  @apply flex-col h-10 md:flex md:flex-row md:space-x-16 relative items-center z-[1202];
+}
+
+#background_container {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed_background_container {
+  @apply bg-cover bg-repeat bg-bottom bg-fixed;
+}
